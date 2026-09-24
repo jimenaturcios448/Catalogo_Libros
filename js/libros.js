@@ -8,12 +8,12 @@ const libros = [
         imagen: "https://covers.openlibrary.org/b/isbn/9780307474728-L.jpg"
     },
     {
-        titulo: "Don Quijote de la Mancha",
-        autor: "Miguel de Cervantes",
+        titulo: "El principito",
+        autor: "Antoine de Saint-Exupéry",
         genero: "clasico",
-        anio: 1605,
-        descripcion: "Las aventuras de un hidalgo que enloquece leyendo novelas de caballería y decide convertirse en caballero andante.",
-        imagen: "https://covers.openlibrary.org/b/isbn/9788420412146-L.jpg"
+        anio: 1943,
+        descripcion: "Un pequeño príncipe viaja por distintos planetas y descubre importantes lecciones sobre la amistad, el amor y la vida.",
+        imagen: "https://covers.openlibrary.org/b/isbn/9780156012195-L.jpg"
     },
     {
         titulo: "1984",
