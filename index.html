@@ -13,6 +13,15 @@
         <p>Una colección de clásicos y bestsellers</p>
     </header>
 
+    <div class="buscador">
+        <input 
+            type="text" 
+            id="buscador-libros"
+            placeholder="🔍 Buscar por título o autor..."
+            autocomplete="off"
+        >
+    </div>
+    
     <div class="filtros">
         <button class="filtro-btn activo" data-genero="todos">Todos</button>
         <button class="filtro-btn" data-genero="clasico">Clásicos</button>
@@ -27,7 +36,17 @@
     <footer>
         <p>Proyecto de portafolio — Catalogo_Libros</p>
     </footer>
+<div id="modal-libro" class="modal">
+    <div class="modal-contenido">
 
+        <button id="cerrar-modal" class="cerrar-modal">
+            ×
+        </button>
+
+        <div id="modal-info"></div>
+
+    </div>
+</div>
     <script src="js/libros.js"></script>
     <script src="js/main.js"></script>
 </body>
