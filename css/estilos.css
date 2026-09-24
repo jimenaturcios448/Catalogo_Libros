@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #faf7f2;
+    color: #1a2332;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 45px;
+    background: linear-gradient(135deg, #1a2332, #2c3e50);
+    color: #f5efe3;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    color: #c9a227;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px 20px 10px;
+    flex-wrap: wrap;
+}
+
+.filtro-btn {
+    padding: 9px 24px;
+    border: 2px solid #1a2332;
+    background-color: transparent;
+    color: #1a2332;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.25s ease;
+}
+
+.filtro-btn:hover {
+    background-color: #1a2332;
+    color: #f5efe3;
+    transform: translateY(-2px);
+}
+
+.filtro-btn.activo {
+    background-color: #c9a227;
+    border-color: #c9a227;
+    color: #1a2332;
+}
+
+.grid-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+    padding: 30px 40px 70px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.libro-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(26, 35, 50, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: aparecer 0.5s ease backwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.libro-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(26, 35, 50, 0.18);
+}
+
+.libro-portada {
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.libro-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.libro-card:hover .libro-portada img {
+    transform: scale(1.06);
+}
+
+.icono-respaldo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.libro-info {
+    padding: 18px 18px 20px;
+}
+
+.libro-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: #1a2332;
+}
+
+.libro-autor {
+    color: #6b6b6b;
+    font-size: 0.88rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.libro-descripcion {
+    font-size: 0.85rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.libro-genero {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 12px;
+    background-color: #f0e6d2;
+    color: #8b6f2f;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1a2332;
+    color: #a8a8a8;
+    font-size: 0.85rem;
+}

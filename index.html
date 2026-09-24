@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Catálogo de Libros</h1>
+        <p>Una colección de clásicos y bestsellers</p>
+    </header>
+
+    <div class="filtros">
+        <button class="filtro-btn activo" data-genero="todos">Todos</button>
+        <button class="filtro-btn" data-genero="clasico">Clásicos</button>
+        <button class="filtro-btn" data-genero="fantasia">Fantasía</button>
+        <button class="filtro-btn" data-genero="misterio">Misterio</button>
+    </div>
+
+    <main id="contenedor-libros" class="grid-libros">
+        <!-- Las tarjetas de libros se van a generar aquí con JavaScript -->
+    </main>
+
+    <footer>
+        <p>Proyecto de portafolio — Catalogo_Libros</p>
+    </footer>
+
+    <script src="js/libros.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
